@@ -1,0 +1,434 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: 'Verdana';
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+.layout {
+	width:100%;
+	position: relative;
+	background: #fff;
+}
+
+.top {
+	width:100%;
+	background-color: #000;
+	height: 50px;
+}
+
+.head-layout {
+	width:1024px;
+	margin: auto;
+}
+
+.menu li {
+  float: left;
+  list-style-type: none;
+	margin-right: 15px;
+}
+
+.menu a {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: #FFF;
+  cursor: pointer;
+  padding: 16px 25px 20px 45px;
+  position: relative;
+  display: block;
+	font-size: 14px;
+}
+
+.menu li:nth-child(1) a { background-image: url(../img/icons/guarantee.png); background-size: 25px 25px;}
+.menu li:nth-child(2) a { background-image: url(../img/icons/reviews.png); background-size: 25px 25px; }
+.menu li:nth-child(3) a { background-image: url(../img/icons/info.png); background-size: 25px 25px; }
+.menu li:nth-child(4) a { background-image: url(../img/icons/phone.png); background-size: 25px 25px; }
+
+.after-menu {
+	clear: left;
+	position: relative;
+	top:0px;
+}
+
+.logo {
+	width: 150px;
+	height: 100px;
+	background-image: url(../img/logo.png);
+	background-size: 150px 100px;
+}
+
+.logo a {
+	width: 150px;
+	height: 100px;
+}
+
+.login-but {
+	position: absolute;
+	right: 0px;
+	top: 35px;
+}
+
+.login-but a {
+	color: #000;
+	margin-left:50px;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#live-lenta-block {
+	width: 100%;
+	height: 130px;
+	background-color: #1A1A1A;
+	color: #fff;
+}
+
+.lenta-block {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.clear {
+	clear: left;
+}
+
+.info {
+	text-align: center;
+	width: 180px;
+	height: 110px;
+	background-color: #555;
+  border-radius: 5px 5px 0 0;
+}
+
+.lenta-info-head {
+	background-color: #8279fb;
+	border-radius: 5px 5px 0 0;
+	padding: 5px;
+}
+
+.lenta-info-text {
+	padding: 25px 15px;
+	font-size: 10px;
+}
+
+.lenta-game {
+	margin-left: 25px;
+	text-align: center;
+}
+
+.lenta-image {
+	width: 80px;
+	height: 95px;
+	background-image: url(../img/default.jpg) ;
+	background-size: 100% 100%;
+}
+
+.lenta-name {
+	margin-top: 3px;
+	font-size: 9px;
+}
+
+.lenta-ago {
+	font-size: 8px;
+}
+.main {
+	width: 1024px;
+	margin: auto;
+	position: relative;
+}
+
+.rand-block {
+	width:900px;
+	margin: 50px auto 10px;
+	position: relative;
+}
+
+.rand-set {
+	border-width: 2px;
+	border-color: rgba(130, 121, 251, .5);
+	border-style: solid;
+	height: 380px;
+}
+
+.rand-head {
+	background-color: #8279fb;
+	position: relative;
+	font-size: 12px;
+	color: #fff;
+	width: 80px;
+	margin: auto;
+	margin-top: -10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.rand-head::after {
+	content: '';
+	position: absolute;
+	left: 0px; bottom: -60px;
+	border: 50px solid transparent;
+	border-top: 10px solid #8279fb;
+}
+
+.rand-line {
+	width:5px;
+	height: 360px;
+	background-color: #8279fb;
+	position: absolute;
+	left: 48px;
+	top:30px;
+}
+
+.rand-block-games {
+	top:20px;
+	left:0;
+	width: 900px;
+	position: absolute;
+}
+.rand-games {
+	margin:20px auto;
+	width: 880px;
+}
+.rand-game {
+	float: left;
+	margin: 10px;
+	width: 156px;
+	height: 234px;
+	background-image: url(../img/Left4Dead.jpg) ;
+	background-size: 100% 100%;
+}
+
+.rand-button-block {
+	position: relative;
+	margin: 20px auto;
+	border-width: 2px;
+	border-color: rgba(130, 121, 251, .5);
+	border-style: solid;
+	height: 100px;
+}
+
+.rand-button {
+	width: 300px;
+	margin: auto;
+	background-color: #8279fb;
+	padding: 15px;
+	border-radius: 30px;
+	text-align: center;
+	position: relative;
+	top: 27px;
+	cursor: pointer;
+}
+
+.rand-button a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.rand-sod {
+	position: absolute;
+	text-align: right;
+	right: 85px;
+	top:40px;
+}
+
+.rand-sod a{
+	text-decoration: none;
+	color: #8279fb;
+}
+
+.block-games {
+	margin: 60px auto;
+	width: 900px;
+	position: relative;
+}
+
+.head-games {
+	text-align: center;
+	position: relative;
+}
+
+.center-head-games {
+	background-color: #8279fb;
+	position: relative;
+	width:100px;
+	height: 40px;
+	font-size: 12px;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+}
+
+.center-head-games::after {
+	 content: '';
+	 border: 30px solid transparent;
+	 border-top-width: 20px;
+	 border-bottom-width: 20px;
+	 border-left-color: #8279fb;
+	 position: absolute;
+	 right:-60px;
+	 top:0;
+}
+.center-head-games::before {
+	content: '';
+	border: 30px solid transparent;
+	border-top-width: 20px;
+	border-bottom-width: 20px;
+	border-right-color: #8279fb;
+	position: absolute;
+	left:-60px;
+	top:0;
+}
+
+.left-head-games {
+	width:375px;
+	height: 2px;
+	position: absolute;
+	background-color: rgba(130, 121, 251, .5);
+	top:19px;
+	left:0px;
+}
+
+.right-head-games {
+	width:375px;
+	height: 2px;
+	position: absolute;
+	background-color: rgba(130, 121, 251, .5);
+	top:19px;
+	right: 0px;
+}
+.main-games {
+	margin: auto;
+	height: auto;
+}
+.game {
+	text-align: center;
+	float: left;
+	margin: 25px;
+	width: 130px;
+	height: 180px;
+	background-image: url(../img/Left4Dead.jpg) ;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+
+.name{
+	font-weight: bold;
+	width: 100%;
+	font-size: 12px;
+	position: absolute;
+	bottom:-15px;
+}
+.game-price{
+	width: 40px;
+	height: 40px;
+	font-size: 11px;
+	color: #FFF;
+	position: absolute;
+	top:3px;
+	right: 3px;
+	opacity: 0.9;
+	border-radius: 25px;
+	background-color: #8279fb;
+	line-height: 40px;
+}
+
+.block-nothing {
+	text-align: center;
+	float: left;
+	margin: 22.5px;
+	width: 180px;
+	height: 130px;
+	position: relative;
+
+}
+.left-game {
+	width: 90px;
+	height: 130px;
+	background-image: url(../img/Left4Dead.jpg) ;
+	background-size: 100% 100%;
+	position: absolute;
+	left:0;
+}
+
+.right-game {
+	width: 90px;
+	height: 130px;
+	background-image: url(../img/Left4Dead.jpg) ;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+}
+
+footer{
+	width:100%;
+	background-color: #000;
+	color:#868686;
+	font-size: 12px;
+}
+.col {
+	float: left;
+	margin-right: 25px;
+	color: #AFAFAF;
+}
+.wrapper {
+	width: 900px;
+	margin: auto;
+	padding: 50px 0;
+}
+
+footer h1,h2 {
+	color: #9F9F9F;
+	margin-top:15px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+.footer-menu {
+	margin-top:5px;
+}
+.footer-menu li {
+	padding: 2px;
+}
+.footer-menu a{
+	color: #9F9F9F;
+	text-decoration: none;
+}
